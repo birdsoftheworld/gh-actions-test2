@@ -20,7 +20,7 @@ jobs:
       - name: Build and Push Docker Image to Docker Hub
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: jasmerri/ghactions-test:latest
+          image: jasmerri/ghactions-test
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
