@@ -18,7 +18,7 @@ jobs:
       - name: Build Project with Gradle
         run: ./gradlew build
       - name: Build and Push Docker Image to Docker Hub
-        uses: mr-smithers-excellent/docker-build-push@v4
+        uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: jasmerri/ghactions-test:latest
           registry: docker.io
